@@ -11,24 +11,24 @@ let btn1 = document.querySelector("#btn1");
 
 
 // through Event Listner
-btn1.addEventListener("click", () => {
-    console.log("button1 was clicked - handler1")
-})
+// btn1.addEventListener("click", () => {
+//     console.log("button1 was clicked - handler1")
+// })
 
-btn1.addEventListener("click", () => {
-    console.log("button1 was clicked - handler2")
-})
+// btn1.addEventListener("click", () => {
+//     console.log("button1 was clicked - handler2")
+// })
 
 const handler3 = () => {
     console.log("button1 was clicked - handler3")
 }
 
-btn1.addEventListener("click", handler3)
-btn1.addEventListener("click", () => {
-    console.log("button1 was clicked - handler4")
-})
+// btn1.addEventListener("click", handler3)
+// btn1.addEventListener("click", () => {
+//     console.log("button1 was clicked - handler4")
+// })
 
-btn1.removeEventListener("click", handler3)
+// btn1.removeEventListener("click", handler3)
 
 
 //Toggling - change one state to another state
@@ -41,9 +41,11 @@ modeBtn.addEventListener("click", () => {
     if(currMode === "light"){
         currMode = "dark";
         body.classList.add("dark");
+        body.classList.remove("light");
     } else {
         currMode = "light";
         body.classList.add("light");
+         body.classList.remove("dark");
     }
 
     console.log(currMode);

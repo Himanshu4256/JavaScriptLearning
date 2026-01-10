@@ -4,7 +4,7 @@
  }
 
  body {
-    background-color: #548587;
+    background-color: #9bb7b8;
     text-align: center;
  }
 
@@ -42,4 +42,16 @@
     color: #fff;
     border-radius: 1rem;
     border: none;
+ }
+
+ #msg{
+    width: 300px;
+    letter-spacing: 4px;
+    color: green;
+ }
+
+  #drawMsg{
+    width: 300px;
+    letter-spacing: 4px;
+    color: red;
  }
